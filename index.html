@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>A website</title>
+    <!-- add your stylesheet and any other styling code, e.g. google fonts  a good link is https://fonts.google.com/-->
+	
+	<link rel="stylesheet" href="css/layout.css" /> 
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+<body>
+
+<!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
+
+    <main class= "main-style">
+	 <header class="page-header">  <!-- What does the header do? Replace this comment with a brief explanation.  see nav above-->
+            <div class="header-content">  <!-- What is a div?  Replace this comment with an explanation.-->
+                <h1>Eri Olaniran</h1>
+                <p>An Undergraduate's Journey: Where Curiosity Meets Computing</p>
+            </div>
+        </header>
+	    <!-- You could style Main here if you wish-->
+        <nav class="page-nav"> <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+       
+    <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about" class="about-me container">  <!--What does the section do here?  Replace this comment with a brief explanation. -->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <div class="content">
+                    My name is Eri Olaniran and I am 17 years old. My birthday is the 10th of September 2007. I am a DCU undergraduate student studying Computer Science. 
+                    I know, Oh My God he looks like he is 15, but I am not okay? I just have a crazy baby face. I was born in Cavan.
+                    I have 3 siblings: 1 older brother, 1 older sister and 1 younger sister as well as my 2 parents.
+                    Interesting fact: I do not use Social Media.
+                    <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <div class="content">
+                    My Work Experience is a very interesting topic in my opinion. Back in 5th year I was so desperate for money, I did an assistant job for the State Examinations Commision. My job was to help the super-intendent with whatever they needed.
+                    The pay was not bad and at the time it was something I was proud of. It was somewhat of my first job.
+                    Throughtout 6th year I kept looking for jobs and I tried applying on Indeed but that application is so useless.
+                    I would say that I applied for atleast 100 jobs in total and only 5 replied back to me just for them to inform me that I did not get the job.
+                    <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                </div>
+            </div>
+        </section>
+				<br><br>
+
+        <section id="images" class="image-gallery container">
+		
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+	
+                    <div class="grid-container">
+                        <figure class="an-image">
+                           <img src="images/piano.jpg" alt="A picture of a piano">
+                           <!-- add image one here with 150 word maximum caption. You may remove the caption if you wish. Don't forget to use alt tags. -->
+                           <figcaption class="image caption">
+                               <ul>
+                                   <li>This image shows a piano, an instrument that holds great personal significance to me.</li>    
+                                   <li>I thought that playing guitar was better for me.</li>               
+                                   <li>My parents insisted I learn the piano instead, believing it would suit me better, and they were right.</li>
+                                   <li>Six years later, I am still playing piano and I have developed a deep connection with the instrument.</li>
+                               </ul>
+                           </figcaption>
+                        </figure>
+                                           
+                       <figure class="an-image">
+                           <img src="images/church.jpg" alt="A picture of a church">
+                           <!-- add image one here with 150 word maximum caption. You may remove the caption if you wish. Don't forget to use alt tags. -->
+                           <figcaption class="image caption">
+                               <ul>
+                                   <li>Church has always been a significant part of my life, shaping who I am today.</li>
+                                   <li>Growing up in a Christian family, attending church regularly was a natural part of life.</li>
+                                   <li>Every Sunday, my parents would wake up early for church. At first, I hated it, but now I am excited to go to church.</li>
+                                   <li>One of my favorite things about church is playing the piano, which makes the experience even more enjoyable.</li>
+                               </ul>
+                           </figcaption>
+                       </figure>
+                       
+                       <figure class="an-image">
+                           <img src="images/television.jpg" alt="A picture of a television">
+                           <!-- add image one here with 150 word maximum caption. You may remove the caption if you wish. Don't forget to use alt tags. -->
+                           <figcaption class="image caption">
+                               <ul>
+                                   <li>Television has always been an interesting and important topic for me personally.</li>
+                                   <li>As a child, I would eagerly watch television whenever I finished my homework early.</li>
+                                   <li>I loved channels like Disney Channel and Nickelodeon, which were a huge part of my childhood.</li>
+                                   <li>Now that I've grown older, I barely have time to sleep, let alone watch television.</li>
+                               </ul>
+                           </figcaption>
+                       </figure>
+                       
+                       </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/[your email address goes here]" method="post">
+	                    <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name" />
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email" /> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone" /> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="send my message" /> </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="dcu.ie/">DCU 2024-2025</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Eri Olaniran</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Michael Scriney<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid HTML</a><br/></span> 
+			</p>
+        <!-- Note that the link to the validator above will only produce results when your page is uploaded to the server, and you click on the link from the browser.-->
+         
+        </footer>
+    </main>
+</body>
+
+</html>
